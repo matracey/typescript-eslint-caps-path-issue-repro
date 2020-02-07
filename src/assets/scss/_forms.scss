@@ -1,0 +1,210 @@
+form {
+  height: 100%;
+}
+
+.optional {
+  color: $orange;
+  font-family: $font-family-sans-serif;
+}
+
+label {
+  font-size: 0.875rem;
+  font-family: $font-family-sans-serif;
+
+  &+.read-only-field {
+    margin-top: -0.3rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+
+    &.expand {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &:hover {
+        overflow: visible;
+        white-space: normal;
+        width: auto;
+        cursor: ns-resize;
+      }
+    }
+  }
+
+  span {
+    &.optional {
+      font-size: 0.7rem;
+      margin-left: 0.3rem;
+    }
+  }
+}
+
+.form-group {
+  label {
+    margin-bottom: 0.2rem;
+  }
+
+  .input-group {
+    .input-group-btn {
+      button {
+        border: 0.0625rem solid;
+        cursor: pointer;
+        height: 2.125rem;
+
+        i {
+          top: -0.18rem;
+          position: relative;
+          margin-right: 0;
+        }
+
+      }
+    }
+  }
+}
+
+input.form-control,
+textarea.form-control,
+select.form-control {
+  font-family: $font-family-sans-serif;
+  font-size: 0.875rem;
+  border-radius: 0.125rem;
+}
+
+.form-control {
+  &.form-control-no-border {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+input.form-control,
+button.form-control {
+  min-height: 2.25rem;
+}
+
+fieldset {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+
+  legend {
+    font-size: 0.75rem;
+    font-family: $font-family-sans-serif;
+    margin-bottom: 0.85rem;
+
+    span {
+      &.optional {
+        color: $orange;
+        font-family: $font-family-sans-serif;
+        font-size: 0.7rem;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+
+.required {
+  color: $rustedRed;
+  font-family: $font-family-sans-serif;
+  font-size: 0.55rem;
+  margin-left: 0.3rem;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.accumulator-list {
+  overflow-y: auto;
+  height: 12.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.btn-bar {
+  margin-left: -0.625rem;
+  margin-bottom: 1.3125rem;
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-family: $font-family-sans-serif;
+  letter-spacing: normal;
+  padding: 0.5rem 0.75rem 0.4rem 0.75rem;
+  border-radius: 0.1875rem;
+  margin-left: 0.625rem;
+  min-width: 7rem;
+  cursor: pointer;
+
+  i {
+    margin-right: 0.3rem;
+    font-size: 1.3rem;
+    position: relative;
+    top: 0.1rem;
+
+    &.fa-smaller {
+      font-size: 1.15rem;
+    }
+  }
+
+  &.btn-primary {
+    border-color: darken($primary, 15%);
+
+    &:hover,
+    &:active,
+    &:focus {
+      &[disabled] {
+        cursor: default;
+      }
+    }
+  }
+
+  &.btn-secondary {
+    border-color: darken($primary, 5%);
+    background-color: $btn-secondary-bg;
+    color: $primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      &:not([disabled]) {
+        color: darken($primary, 5%);
+        background-color: $lightGray;
+      }
+
+      &[disabled] {
+        cursor: default;
+      }
+    }
+
+  }
+
+  &.btn-compact {
+    min-width: auto;
+  }
+
+  &.btn-link {
+    margin-left: 0;
+    border: none;
+    background: none;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus {
+      background-color: none;
+      background: none;
+    }
+
+    &[disabled]:hover {
+      text-decoration: none;
+      cursor: default;
+      border: none;
+      background-color: none;
+      background: none;
+    }
+  }
+}
+
+a.fa {
+  &.disabled {
+    cursor: default;
+  }
+}

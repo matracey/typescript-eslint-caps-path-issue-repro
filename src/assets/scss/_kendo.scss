@@ -1,0 +1,45 @@
+@import './variables';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.k-grid-edit-row td,
+.k-edit-cell {
+  .k-widget:not(.k-switch) {
+    width: 100%;
+  }
+}
+
+button.k-grid-excel {
+  color: $green;
+  font-weight: bold;
+}
+
+.value-changed-new {
+  background-color: lighten($green, 50%);
+  font-weight: bold;
+}
+
+.value-changed-old {
+  background-color: lighten($red, 25%);
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.k-multiselect {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.k-loading-color {
+  opacity: 0.8 !important;
+}
+
+.k-window-title {
+  color: $headings-color;
+  font-size: 1.25rem;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-semibold;
+}
+
+.form-control.k-widget {
+  height: inherit;
+}

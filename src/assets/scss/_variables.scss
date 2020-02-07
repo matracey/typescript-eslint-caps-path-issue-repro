@@ -1,0 +1,87 @@
+@import "~bootstrap/scss/functions";
+
+$top-bar-height: 4.25rem;
+$footer-height: 3.25rem;
+
+$font-weight-semibold: 600 !default;
+
+.font-weight-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+
+$img-path: "../images/";
+
+$yellow : #ffb900;
+$sunrise : #F5C742;
+$orange : #d83b01;
+$red : #d13438;
+$rustedRed: #E64C3C;
+$magenta : #b4009e;
+$purple : #5c2d91;
+$blue : #006ec2;
+$navyBlue : #004578;
+$skyBlue  : #3497DA;
+$teal : #008272;
+$green : #107c10;
+$indigo : #6610f2;
+$lavender : #7C7FB6;
+$pink : #e83e8c;
+$cyan : #17a2b8;
+
+$lightGray: #EBEFF0;
+$gray : #989898;
+$charcoal : #58585B;
+
+$white : #FFFFFF;
+$orange2 : #ffaa44;
+$headings-color: $navyBlue;
+
+$main-body-bg : $lightGray;
+$btn-secondary-bg : $white;
+
+$font-size-base : 0.9rem;
+$font-size-lg : $font-size-base * 1.25;
+$font-size-xl : $font-size-base * 1.5;
+$font-size-sm : $font-size-base * .875;
+$font-size-base-plus: $font-size-base+0.0625;
+$font-size-lg-plus : $font-size-lg+0.0625;
+$font-size-xl-plus : $font-size-xl+0.0625;
+$font-size-sm-plus : $font-size-sm+0.0625;
+
+$font-sizes: ("base": $font-size-base,
+  "lg": $font-size-lg,
+  "xl": $font-size-xl,
+  "sm": $font-size-sm,
+  "base-plus": $font-size-base-plus,
+  "lg-plus": $font-size-lg-plus,
+  "xl-plus": $font-size-xl-plus,
+  "sm-plus": $font-size-sm-plus,
+);
+
+$gray-600 : #6c757d;
+$enable-validation-icons: false;
+
+$grid-gutter-width : 1.875rem;
+
+$theme-colors: ("primary": $blue,
+  "navyBlue":$navyBlue,
+  "danger": $rustedRed);
+
+$colors: ("yellow": $yellow,
+  "sunrise": $sunrise,
+  "orange": $orange,
+  "red": $red,
+  "rustedRed": $rustedRed,
+  "magenta": $magenta,
+  "purple": $purple,
+  "blue": $blue,
+  "navyBlue": $navyBlue,
+  "teal": $teal,
+  "green": $green,
+  "indigo": $indigo,
+  "lavender": $lavender,
+  "pink": $pink,
+  "cyan": $cyan,
+  "lightGray": $lightGray,
+  "gray": $gray,
+  "charcoal": $charcoal);

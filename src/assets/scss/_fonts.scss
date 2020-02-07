@@ -1,0 +1,10 @@
+@mixin size-variant($parent, $size, $ignore-warning: false) {
+  #{$parent} {
+    font-size: $size !important;
+  }
+}
+
+@each $size,
+$value in $font-sizes {
+  @include size-variant(".font-size-#{$size}", $value, true);
+}

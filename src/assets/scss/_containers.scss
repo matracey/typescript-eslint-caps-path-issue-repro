@@ -1,0 +1,58 @@
+.main-content {
+  padding: 1.75rem;
+  min-height: 100%;
+
+  @media (max-width: 768px) {
+    padding-left: 7.5rem;
+  }
+
+  @media (max-width: 575.98px) {
+    padding-left: 1.75rem;
+  }
+}
+
+.modal-backdrop {
+  &.show {
+    opacity: 0.8;
+  }
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      background: none;
+
+      .modal-header {
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        padding: 0.7rem 0.9375rem;
+        font-family: $font-family-sans-serif;
+
+        h2 {
+          font-weight: normal;
+          font-size: 1rem;
+          font-family: $font-family-sans-serif;
+        }
+
+        button {
+          opacity: 1;
+        }
+
+        span {
+          text-shadow: none;
+        }
+      }
+
+      // .modal-body {}
+
+      .modal-footer {
+        border-top: 0.0625rem solid;
+
+        .btn {
+          padding: 0.55rem 0.75rem 0.55rem 0.75rem;
+        }
+      }
+    }
+  }
+}
